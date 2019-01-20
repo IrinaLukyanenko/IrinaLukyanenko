@@ -1,0 +1,210 @@
+.slaider {
+    margin: 0 auto;
+	width: 500px;
+	height: 100%;	
+}
+body {
+	font-family: Arial, San-Serif;
+	font-size: 100%;
+}
+.body {
+padding: 10px 0;
+background-image: url('fon.png');
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+p {
+   font-style: 13px;
+   line-height: 1.3em;
+}
+
+.top1{
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+
+	/* Заголовок*/
+}	
+.header {
+	padding: 10px 0;
+	background-image: url('top2.jpg');
+	
+}
+.header h1 {
+	color: blue;
+	text-align: center;
+}	
+.header h2 {
+	color: blue;
+	text-align: center;
+}
+
+/*TOP MENU*/
+.menu{ /*элемент с классом menu*/
+   position: relative; /*устанавливает способ позиционирования элемента - обычное положение элемента, дочерние элементы с абсолютным позиционированием будут позиционироваться относительно границ родителя. */
+   padding: 0 0 0 34px; /*внутренние отступы сверху, справа, снизу, слева*/
+   margin: 0 auto 0 auto; /*внешние отступы автоматически*/
+   background: url(menu_bg.gif) repeat-x; /*фоновое изображение и путь к изображению, повторить(растянуть) по оси x*/
+   height: 50px; /*высота*/
+   list-style: none; /*задаем стиль отображения маркеров - отобразить без маркера*/
+}
+.menu li{ /*элемент li элемента с классом menu*/
+   float:left; /*выравниваем по левому краю, остальные элементы обтекают справа*/
+}
+.menu li a{ /*ссылка элемента li элемента с классом menu*/
+   float: left; /*выравниваем по левому краю, остальные элементы обтекают справа*/
+   display: block; /*блочный элемент - элементы начинаются с новой строки, после элемента также добавляется перенос строки*/
+   color:#000; /*цвет*/
+   text-decoration: none; /*подчеркивание отсутствует*/
+   font-family: sans-serif; /*шрифт*/
+   font-size: 16px; /*размер шрифта*/
+   font-weight: bold; /*начертание шрифта - стандартный полужирный шрифт (значение = 700)*/
+   padding:0 0 0 20px; /*внутренние отступы сверху, справа, снизу, слева (ЖЕЛАТЕЛЬНО НЕ МЕНЯТЬ !)*/
+   height: 50px; /*высота*/
+   line-height: 50px; /*задаем высоту линии (интерлиньяж, межстрочный интервал) текста*/
+   text-align: center;/*выравнивание текста - по центру*/
+   cursor: pointer;/*задаем тип курсора - обычный в виде руки*/
+}
+.menu li a b{ /*тег b ссылки элемента li элемента с классом menu*/
+   float: left; /*выравниваем по левому краю, остальные элементы обтекают справа*/
+   display: block;/*блочный элемент - элементы начинаются с новой строки, после элемента также добавляется перенос строки*/
+   padding: 0 24px 0 3px; /*внутренние отступы сверху, справа, снизу, слева (тут как бы расстояние между элементами меню)*/
+}
+.menu li.current a, .menu li a:hover{ /*ссылка элемента li с классом current элемента с классом menu, ссылка элемента li элемента с классом menu при наведении курсора*/
+   color: #fff; /*цвет*/
+   background: url(menu_hover_left.gif) no-repeat; /*фоновое изображение и путь к изображению (левой картинке), не повторять*/
+   background-position: left; /*позиция фонового изображения - слева*/
+}
+.menu li.current a b, .menu li a:hover b{ /*тег b ссылки элемента li с классом current элемента с классом menu, тег b ссылки элемента li элемента с классом menu при наведении курсора*/
+   color: #fff; /*цвет*/
+   background: url(menu_hover_right.gif) no-repeat right top; /*фоновое изображение и путь к изображению (правой картинке), не повторять, отобразить справа сверху(в правом верхнем углу)*/
+}
+
+/*Коллекции*/
+.collection {
+	overflow: auto;
+}
+
+.collection-title {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #777;
+	font-size: 36px; 
+}
+.collection-title small {
+	color: #777;
+	font-size: 70%;
+}
+.collection-item-outer {
+	display: inline-block;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 33.3%;
+	box-sizing: border-box;  
+}
+.collection > div:first-child {
+	padding-left: 0;
+	padding-right: 5px; 
+}
+.collection > div:last-child {
+	padding-right: 0;
+	padding-left: 5px;
+}
+.collection-item {
+	border: 1px solid #959595;
+}
+.collection-item img {
+	width: 100%;
+	height: 200px;
+}
+.collection-item video {
+	width: 100%;
+}
+.collection-text {
+	padding: 0 20px 20px 20px;
+}
+.collection-text h4 {
+	color: blue;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+	text-align: center;
+}
+.collection-text p {
+height: 100px;
+overflow: hidden;
+text-align: justify;
+}
+.collection-text button {
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+}
+.left-menu {
+	margin: 0 auto;
+	width: 230px;
+	height: 280px;
+	float: left;
+	margin-right: 10 px;
+}
+.left-menu h4 {
+	text-align:center;
+}
+.right-menu {
+	margin: 0 auto;
+	width: 230px;
+	float: right;
+	height: 280px;
+	margin-right: 10 px;
+}
+/*TEXT*/
+.text {
+    margin: 0 auto;
+	width: 1200px;
+	background-image: url('top1.jpg');
+}
+.text h3 {
+	margin: 7px 7px 7px 7px; 
+color: blue;
+text-align: center;	
+}
+.text h4 {
+	 margin: 7px 7px 7px 7px; 
+color: #000;
+text-align: right;	
+}	
+.text p {
+   margin: 7px 7px 7px 7px; 
+   font-style: 13px;
+   line-height: 1.3em;
+   text-align: justify;
+}
+.text img {
+float:left; /* Выравнивание по левому краю */
+margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
+/*FOOTER*/
+.footer {
+	background-color: green;
+	color: white;
+	padding: 20px 0;
+	margin-top: 30px;  
+}
+.footer p {
+   font-style: 13px;
+   line-height: 1.3em;
+   text-align: center;
+}
